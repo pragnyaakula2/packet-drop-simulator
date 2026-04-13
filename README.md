@@ -1,13 +1,13 @@
 # Packet Drop Simulator using SDN (POX + Mininet)
 
-## 📌 Overview
+##  Overview
 
 This project demonstrates a **Software Defined Networking (SDN)**-based packet filtering system using a **POX controller** and **Mininet**.
 It allows selective dropping of network traffic based on predefined rules and validates behavior using automated testing.
 
 ---
 
-## 🚀 Features
+##  Features
 
 * Custom packet drop rules based on:
 
@@ -22,7 +22,7 @@ It allows selective dropping of network traffic based on predefined rules and va
 
 ---
 
-## 🧠 Project Structure
+##  Project Structure
 
 ```
 packet-drop-simulator/
@@ -36,7 +36,7 @@ packet-drop-simulator/
 
 ---
 
-## ⚙️ Requirements
+##  Requirements
 
 * Python 3.x
 * Mininet
@@ -47,7 +47,7 @@ packet-drop-simulator/
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Install Mininet
 
@@ -73,7 +73,7 @@ pox/ext/
 
 ---
 
-## ▶️ Running the Simulation
+##  Running the Simulation
 
 From your project directory:
 
@@ -90,7 +90,7 @@ This will:
 
 ---
 
-## 🧪 Manual Testing (Mininet CLI)
+##  Manual Testing (Mininet CLI)
 
 Inside Mininet, run:
 
@@ -102,7 +102,7 @@ h2 ping h4 -c 10   # Expected: ICMP dropped
 
 ---
 
-## 📊 Automated Testing
+##  Automated Testing
 
 Run inside Mininet:
 
@@ -119,7 +119,7 @@ After exiting Mininet, regression tests run automatically:
 
 ---
 
-## 🔥 Drop Rules Configuration
+##  Drop Rules Configuration
 
 Defined in `drop_controller.py`:
 
@@ -143,7 +143,7 @@ DROP_RULES = [
 
 ---
 
-## 🧠 Key Concepts Demonstrated
+##  Key Concepts Demonstrated
 
 * Software Defined Networking (SDN)
 * Separation of Control Plane and Data Plane
@@ -153,7 +153,7 @@ DROP_RULES = [
 
 ---
 
-## ✅ Expected Output
+##  Expected Output
 
 * Selected flows experience **100% packet loss**
 * Other flows are forwarded normally
@@ -162,7 +162,7 @@ DROP_RULES = [
 
 ---
 
-## 📌 Conclusion
+##  Conclusion
 
 This project demonstrates how SDN controllers can dynamically manage network behavior by installing flow rules, enabling flexible and programmable network control.
 
